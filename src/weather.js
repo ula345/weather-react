@@ -16,16 +16,12 @@ export default function Weather() {
     temperature: 19
   };
   return (
+
     <div className="Weather">
       <form className="mb-3">
         <div className="row">
           <div className="col-9">
-            <input
-              type="search"
-              placeholder="Search for a city"
-              className="form-control"
-              autocomplete="off"
-            />
+           <search /> 
           </div>
           <div className="col-3">
             <input
