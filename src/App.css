@@ -1,38 +1,119 @@
 .App {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+body {
+  background-image: (background.jpg);
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  font-family: arial, sans-serif;
+}
+
+.weather-app-vanilla {
+  max-width: 800px;
+  margin: 50px auto 0;
+  padding: 80px 60px 100px 60px;
+  border: 2px solid #615f69;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.col-9 {
+  margin-bottom: 20px;
+}
+.overview {
+  margin-bottom: 30px;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(238, 177, 177);
+  }
+  25% {
+    background-color: rgb(228, 228, 157);
+  }
+  50% {
+    background-color: rgb(160, 160, 231);
+  }
+  100% {
+    background-color: rgb(183, 196, 183);
+  }
+}
+.weather-temperature img {
+  border-radius: 70%;
+  margin-right: 20px;
+  height: 110px;
+  width: 110px;
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 25px;
+  top: -34px;
+}
+
+.d-flex .weather-temperature {
+  margin: 30px;
+  padding: 0px;
+}
+h1 {
+  color: #5f3f3f;
+  font-size: 45px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 20px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+.description {
+  text-transform: capitalize;
+}
+
+.github-link {
   text-align: center;
+  margin: auto;
+  color: rgb(207, 126, 126);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  color: rgb(207, 126, 126);
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
