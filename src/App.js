@@ -1,14 +1,15 @@
 import Weather from "./weather";
 import './App.css';
 import axios from "axios"; 
-import Search from "./search" 
+import Search from "./search";
 
 
 export default function App() {
   return (
     <div className="App">
-      <div className="container"> 
-      <weather defaultCity="New York" 
+    <Search/>
+      <Weather />
+
       <footer>
           This project was coded by{" "}
           <a
@@ -16,11 +17,11 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Matt Delac
+            Urszula Krzemińska
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/wecodeschool/react-weather-app"
+            href="https://github.com/ula345/weather-react.git"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,8 +37,6 @@ export default function App() {
           </a>
         </footer>
         </div>
-    </div>
+ 
   );
 }
-
-export default App;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
@@ -33,9 +34,7 @@ export default function WeatherSearch() {
       <input type="search" placeholder="Enter a city.." onChange={updateCity} />
       <button type="Submit">Search</button>
     </form>
-  );
-
-  if (loaded) {  
+  ); 
     return (
       <div>
         {form}
@@ -50,7 +49,4 @@ export default function WeatherSearch() {
         </ul>
       </div>
     );
-  } else {
-    return form;
-  }
 }

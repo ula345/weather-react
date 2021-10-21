@@ -18,20 +18,7 @@ export default function Weather() {
   return (
 
     <div className="Weather">
-      <form className="mb-3">
-        <div className="row">
-          <div className="col-9">
-           <search /> 
-          </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="btn btn-primary w-100"
-            />
-          </div>
-        </div>
-      </form>
+    
 
       <div className="overview">
         <h1> {weatherData.city}</h1>
