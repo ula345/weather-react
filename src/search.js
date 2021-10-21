@@ -35,7 +35,7 @@ export default function WeatherSearch() {
     </form>
   );
 
-  if (loaded) {   buhvbukb
+  if (loaded) {  
     return (
       <div>
         {form}
